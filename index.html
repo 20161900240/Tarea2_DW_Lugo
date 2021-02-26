@@ -10,47 +10,178 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+        <nav class="barraLugo">
+            <div class="d-inline-flex ">
+            <a class=" tiLugo"><strong>LUGO</strong></a>
+           
+            <div class="divSeleBtn">
+                <div class="divSelect">
+                    <select name="" id="" class="selectLugo">
+                        <option class="" value="">Pedro Martinez1</option>
+                        <option class="" value="">Pedro Martinez3</option>
+                        <option class="" value="">Pedro Martinez4</option>
+                        <option class="" value="">Pedro Martinez5</option>
+                        <option class="" value="">Pedro Martinez6</option>
+                    </select>
                 </div>
-            </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+
+                <div class="divBtn">
+                    <button class=" btnOrdenes" type="button" data-toggle="modal" data-target="#exampleModalCenter">Ver Ordenes</button>
+                </div>
+            </div>
+             
+           
+            </div>
         </nav>
+
+        <div class="container-fluid divContenido">
+           <div class="">
+            <p class="helooN"><strong> Hola Pedro!</strong></p>
+            <p class="nece">¿Que Necesitas?</p>
+           </div>
+           <div class=" row">
+                <div onclick="abrirModal()" class="col-lg-3 tarjetas" >
+                    <div class="tarjeta2">
+                        <div class="iconoIM">
+                            <div class="icon">
+                                <p>icono</p>
+                            </div>
+                        </div>
+                        <div class="titulos">
+                            <h1>Farmacias</h1>
+                            <h4>3 comercios</h4>
+                        </div>
+                    </div>  
+                </div>
+               
+               
         
-        <main role="main" class="container">
+                
+               
+           </div>
+           
+          
         
-        <div class="starter-template">
-            <img src="img/meme.jpg" alt="" srcset="">
-            <p class="lead">Éxitos</p>
+        
         </div>
-        
+        <footer>
+            
+        </footer>
         </main><!-- /.container -->
+  
+        <!-- Modal  Productos Usuarios-->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <p class="modal-title" id="exampleModalLongTitle">Pedro, Estas son tus ordenes</p>
+                </div>
+                <div class="modal-body">
+                <div class="bodyModal">
+                    <p class="titProd"><strong>Producto 1</strong></p>
+                    <p class="desProd"><strong>Lorem ipsum dolor, sit amet</strong></p>
+                    <span class="preciProd"><strong>$49.99</strong></span>
+                    <hr>
+                    <p class="titProd"><strong>Producto 1</strong></p>
+                    <p class="desProd"><strong>Lorem ipsum dolor, sit amet</strong></p>
+                    <span class="preciProd"><strong>$49.99</strong></span>
+                    <hr>
+                    <p class="titProd"><strong>Producto 1</strong></p>
+                    <p class="desProd"><strong>Lorem ipsum dolor, sit amet</strong></p>
+                    <span class="preciProd"><strong>$49.99</strong></span>
+                </div>
+                </div>
+                <button type="button" class="btn btn-secondary btnClo" data-dismiss="modal">Cerrar</button> 
+            </div>
+            </div>
+        </div>
+
+         <!-- Modal Cate-->
+        <div class="modal fade" id="cateProd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <p class="modal-title" id="exampleModalLongTitle"><strong>Restaurantes</strong></p>
+                </div>
+                <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <div>
+                            <div class="titCat">
+                                <img class="catimg" src="img/banner.jpg" alt="">
+                            </div>
+                            <div class="titEmpresa">
+                                <p>Empresa 1</p>
+                            </div>
+                            
+                            <div class="catBodyModal">
+                                <div class="row">
+                                    <div class="col-6">
+                                         <spam class="titProd"><strong>Producto 1</strong></spam>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btnPedir" onclick="pidiendo()" type="button">pedir</button>
+                                    </div>
+                                </div>
+                                <p class="desProd"><strong>Lorem ipsum dolor, sit amet</strong></p>
+                                <span class="preciProd"><strong>$49.99</strong></span>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                         <spam class="titProd"><strong>Producto 1</strong></spam>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btnPedir" type="button">pedir</button>
+                                    </div>
+                                </div>
+                                <p class="desProd"><strong>Lorem ipsum dolor, sit amet</strong></p>
+                                <span class="preciProd"><strong>$49.99</strong></span>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                         <spam class="titProd"><strong>Producto 1</strong></spam>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btnPedir" type="button">pedir</button>
+                                    </div>
+                                </div>
+                                <p class="desProd"><strong>Lorem ipsum dolor, sit amet</strong></p>
+                                <span class="preciProd"><strong>$49.99</strong></span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+                <button type="button" class="btn btn-secondary btnCloCat" data-dismiss="modal">Cerrar</button> 
+        </div>
+        </div>
+        </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="pidiendO" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+        <p class="pidPro">Producto 1</p>
+        <p >Lorem ipsum dolor sit amet.</p>
+       <div> Cantidad a solicitar: <input  class="pidInputs" type="text"></div>
+        </div>
+        <div>
+            <p class="pidPrec">$49.99</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btnProce" onclick="procesar()" >Procesar orden</button>
+        </div>
+      </div>
+    </div>
+  </div>
+       
               
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>

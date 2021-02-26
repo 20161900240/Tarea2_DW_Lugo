@@ -493,3 +493,13 @@ var categorias = [
 
 console.log ('Usuarios', usuarios);
 console.log ('Categorias', categorias);
+
+
+/*****************************************************************************************/
+function abrirModal(){
+    $('#cateProd').modal('show');
+}
+
+function pidiendo(){
+    $('#pidiendO').modal('show');
+}
